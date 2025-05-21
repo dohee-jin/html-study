@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        p{
+            background-color: skyblue;
+        }
+        div{
+            background-color: violet;
+        }
+        ul{
+            background-color: dodgerblue;
+        }
+        a{
+            background-color: yellowgreen;
+        }
+        em{
+            background-color: coral;
+        }
+        span{
+            background-color: gold;
+        }
+        input{
+            width: 100px;
+            height: 50px;
+        }
+        img{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 블록 요소 -->
+    <!--
+        html 태그들은 기본적으로 처음부터 부여된 성질이 있음
+        블록요소는 박스모델을 만드는 요소
+        가로, 세로 길이를 가질 수 있으며 레이아웃을 구성하는 요소
+        가로 디폴트 값이 100% -> 세로로 쌓임
+    -->
+    <!-- 인라인 요소 -->
+    <!--
+        텍스트를 처리하는 태그들. 가로, 세로 길이를 가질 수 없음
+        ex) a, span(인라인 계 div), em(강조), strong(강조), b, abbr(약어)
+    -->
+    <!-- css로 디스플레이 속성을 변경 시키는 이유 -->
+    <!-- 인라인 블록 요소 -->
+    <!--
+        인라인 이면서 가로, 세로 길이를 가질 수 있음
+        input, img
+    -->
+    <p>블록요소 1</p>
+    <div><strong>블록</strong>요소 2</div>
+    <ul>블록요소 3
+        <li>블록요소</li>
+        <li>블록요소</li>
+        <li>블록요소</li>
+    </ul>
+
+    <hr>
+
+    <a href="#">인라인 요소1</a>
+    <span>인라인 요소2</span>
+    <em>인라인 요소3</em>
+
+    <hr>
+    <div>
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </div>
+
+    <div>
+        <img src="//t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/4arX/image/kHEyaIBkalJXnxwx46z7kY5Kwoc.jpg" alt="" />
+        <img src="//t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/4arX/image/kHEyaIBkalJXnxwx46z7kY5Kwoc.jpg" alt="" />
+        <img src="//t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/4arX/image/kHEyaIBkalJXnxwx46z7kY5Kwoc.jpg" alt="" />
+    </div>
+
+</body>
+</html>

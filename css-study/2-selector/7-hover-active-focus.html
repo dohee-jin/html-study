@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        a{
+            color: orange;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #0053D9;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: 1s;
+        }
+        .box:hover{
+            background-color: #aaaaaa;
+            width: 180px;
+        }
+        .box:active{
+            height: 200px;
+            background-color: yellow;
+        }
+        #common{
+            width: 100px;
+            margin-top: 20px;
+            padding: 5px;
+            outline: none;
+            transition: 0.6s;
+            border-radius: 4px;
+        }
+        #common:focus{
+            border-color: red;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">hello</a>
+    <div class="box"></div>
+    <input type="text" id="common">
+</body>
+</html>

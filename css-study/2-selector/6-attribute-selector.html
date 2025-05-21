@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        /* '[]' 속성 지정 가능, 해당 속성의 스타일 변경 */
+        input[type="password"]{
+            color: red;
+        }
+        input[type="text"]{
+
+        }
+        [disabled]{
+            font-style: italic;
+        }
+        input[type="text"]:disabled{
+            border: 1px solid #0053D9;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" value="hello">
+    </div>
+    <div>
+        <input type="password" value="1234">
+    </div>
+    <div>
+        <input type="text" value="사용불가" disabled>
+    </div>
+    <select>
+        <option value="">라면</option>
+        <option value="">양파</option>
+        <option value="" disabled>치즈</option>
+    </select>
+</body>
+</html>

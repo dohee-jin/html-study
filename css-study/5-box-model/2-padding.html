@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        *{
+            /* '*' 전체 선택자 */
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .wrap{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: orange;
+            /* padding 사용하면 box의 크기가 padding 만큼 커진다 */
+            padding-top: 40px;
+            padding-left: 30px;
+            font-size: 0;
+            box-sizing: border-box;
+        }
+        .container p{
+            font-size: 20px;
+            border: 4px solid red;
+            padding: 10px;
+        }
+        .box{
+            background-color: tomato;
+            font-size: 2rem;
+            color: #fff;
+            padding: 20px;
+        }
+        .card{
+            display: inline-block;
+            width: 250px;
+            border-radius: 10px;
+            padding: 10px;
+            border: 1px solid lightgray;
+        }
+        .card .image{
+            width: 100%;
+            height: 250px;
+            border: 1px solid lightgray;
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;
+        }
+        .card .image img{
+            height: 100%;
+            position: absolute;
+            left: -40px;
+        }
+        .card .text{
+            border: none;
+            font-size: 1em;
+            padding-top: 10px;
+        }
+        table{
+            border: 2px solid #000;
+            border-collapse: collapse;
+        }
+        th{
+            background-color: #EAF3FC;
+        }
+        td{
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="box">안녕안녕</div>
+            <p>
+                국군의 조직과 편성은 법률로 정한다. 대통령은 법률이 정하는 바에 의하여 사면·감형 또는 복권을 명할 수 있다. 국가의 세입·세출의 결산, 국가 및 법률이 정한 단체의 회계검사와 행정기관 및 공무원의 직무에 관한 감찰을 하기 위하여 대통령 소속하에 감사원을 둔다.
+                농업생산성의 제고와 농지의 합리적인 이용을 위하거나 불가피한 사정으로 발생하는 농지의 임대차와 위탁경영은 법률이 정하는 바에 의하여 인정된다.
+            </p>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="//t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/4arX/image/kHEyaIBkalJXnxwx46z7kY5Kwoc.jpg" alt="" />
+            </div>
+            <p class="text">text</p>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>제목</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ddddd</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

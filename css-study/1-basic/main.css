@@ -1,0 +1,10 @@
+*{
+    list-style: none;
+}
+ul{
+    padding: 0;
+}
+li{
+    background-color: gray;
+    width: fit-content;
+}

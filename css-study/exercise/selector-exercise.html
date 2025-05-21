@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>선택자 연습</title>
+    <style>
+        /* 1.기본 선택자 사용 */
+        #main-header{
+            background-color: gray;
+        }
+        h1{
+            color: blue;
+        }
+        .intro{
+            font-size: 18px;
+        }
+
+        /* 2.속성 선택자 사용 */
+        [type="button"]{
+            background-color: green;
+        }
+        [type="text"]{
+            color: red;
+        }
+
+        /* 3.가상 클래스 선택자 사용 */
+        a:hover{
+            color: orange;
+        }
+        input:focus{
+            background-color: yellow;
+        }
+
+        /* 4.우선순위 연습
+        -> 부모 요소 > 자식 요소 순으로 자세히 작성하는 것이 우선 순위가 높다,
+        작성 순서에 따라서도 우선순위가 결정되는 것으로 알고있는데 자세히 작성할 수록
+        작성순서 상관없이 우선순위가 높다
+         */
+        .content .intro{
+            padding: 3px;
+            background-color: #0053D9;
+            color: #fff;
+        }
+        .intro{
+            padding: 0;
+            font-size: 14px;
+            color: #aaaaaa;
+        }
+
+        /* 5.복합 선택자 사용 */
+        section p{
+            background-color: #EBEBEB;
+        }
+        .navigation a{
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1>웹 개발 학습</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">홈</a></li>
+                <li><a href="#">소개</a></li>
+                <li><a href="#">서비스</a></li>
+                <li><a href="#">연락처</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2>CSS 선택자 연습</h2>
+            <p class="intro">이 문서는 다양한 css 선택자를 연습하기 위해 만들어졌습니다.</p>
+            <p class="intro">css 선택자는 html 요소를 선택하여 스타일을 적용하는 데 사용됩니다.</p>
+        </section>
+        <section class="content">
+            <h2>속성 선택자와 가상 클래스 선택자</h2>
+            <p>속성 선택자와 가상 클래스 선택자는 요소의 상태나 속성을 기준으로 스타일을 적용할 수 있습니다.</p>
+            <button type="button">클릭하세요.</button>
+            <input type="text" placeholder="텍스트 입력">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 웹 개발 학습. 모든 권리 보유</p>
+    </footer>
+</body>
+</html>

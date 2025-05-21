@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        #fruits li:first-child{
+            color: red;
+        }
+        #fruits li:nth-child(4){
+            /* 첫째부터 숫자가 1로 부여됨 */
+            color: orange;
+        }
+        #fruits li:nth-child(odd),
+        #fruits li:nth-child(2n+1){
+            /* n은 0부터 대입했을 때 선택되는 숫자(여기서는 홀수번) */
+            font-style: italic;
+        }
+        #fruits li:nth-child(even),
+        #fruits li:nth-child(2n){
+            background-color: #EAF3FC;
+        }
+        #fruits li:last-child{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul id="fruits">
+        <li>사과</li>
+        <li>멜론</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+        <li>수박</li>
+        <li>블루베리</li>
+        <li>귤</li>
+        <li>레몬</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@import "common.css";
+
+/*.question-area{*/
+/*    width: fit-content;*/
+/*    background-color: #EBEBEB;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    padding: 30px 30px 30px 20px;*/
+/*    gap: 20px;*/
+/*}*/
+/*.question-area .question{*/
+/*    color: #fff;*/
+/*    font-size: 1.5em;*/
+/*    font-weight: 700;*/
+/*    text-shadow: 2px 2px 5px #666;*/
+/*    padding: 6px;*/
+/*    flex: 0 0 auto;*/
+/*}*/
+/*.question-area .question:hover{*/
+/*    background-color: skyblue;*/
+/*    color: yellow;*/
+/*}*/
+
+.question-area{
+    width: fit-content;
+    background-color: #EBEBEB;
+    padding: 30px 30px 30px 20px;
+    margin: 0 auto;
+}
+.question-area li{
+    margin-bottom: 20px;
+}
+.question-area li:last-child{
+    margin-bottom: 0;
+}
+.question-area li .question{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px #666;
+    padding: 6px;
+}
+.question-area li .question:hover{
+    background-color: skyblue;
+    color: yellow;
+}

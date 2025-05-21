@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .parent{
+            width: 300px;
+            height: 250px;
+            border: 4px solid gray;
+            margin: 50px auto;
+            overflow-y: auto;
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 4px solid orange;
+        }
+        .profile-image{
+            width: 150px;
+            height: 150px;
+            border: 1px solid gray;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+        }
+        .profile-image img{
+            position: absolute;
+            left: -18px;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+    </div>
+    <div class="profile-image">
+        <img src="//t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/4arX/image/kHEyaIBkalJXnxwx46z7kY5Kwoc.jpg" alt="" />
+    </div>
+</body>
+</html>

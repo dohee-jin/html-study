@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        .or{
+            color: orange;
+        }
+        /* 일치선택자: and 조건으로 연결된 선택자 */
+        li.or{
+            font-style: italic;
+        }
+        span.or{
+            background-color: orangered;
+        }
+        .red{
+            color: red;
+        }
+        li#apple{
+            font-size: 1.3em;
+        }
+        .yellow.primary.danger{
+            border: 4px dashed yellowgreen;
+            font-style: italic;
+        }
+        h1.row.warning#title.skip{
+            color: violet;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="row warning skip" id="title">안녕하세요</h1>
+    <div>
+        <ul>
+            <li id="apple" class="red">사과</li>
+            <li>포도</li>
+            <li class="or">오렌지</li>
+            <li class="red">체리</li>
+        </ul>
+        <div class="yellow primary danger">당근</div>
+        <p class="red">토마토</p>
+        <span class="or">오렌지</span>
+    </div>
+</body>
+</html>

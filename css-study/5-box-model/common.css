@@ -1,0 +1,18 @@
+@import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css');
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    color: #333;
+    line-height: 1.4;
+    font-size: 16px;
+    /*font-family: '궁서', '궁서체', 'GungSeo', cursive ;*/
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
