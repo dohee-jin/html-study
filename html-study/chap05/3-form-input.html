@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        *:focus{
+            outline-color: #0053D9;
+        }
+        .form-group-input{
+            margin-bottom: 20px;
+        }
+        .form-group-input label{
+            font-size: 0.9rem;
+            color: #333;
+            display: block;
+        }
+        .form-group-input input[type="text"],
+        .form-group-input input[type="password"],
+        .form-group-input input[type="email"]{
+            width: 200px;
+            height: 32px;
+            padding: 0 0 0 4px;
+            border: 1px solid #EBEBEB;
+            border-radius: 4px;
+        }
+        .form-group-input.checkbox{
+            display: flex;
+            align-content: center;
+        }
+        .form-group-input.checkbox label{
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+            border: 1px solid #EBEBEB;
+        }
+        .form-group-input.checkbox .label{
+            border: none;
+            width: auto;
+            height: auto;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .form-group-input.checkbox input[type="checkbox"]{
+            display: none
+        }
+        .form-group-input.checkbox input[type="checkbox"]:checked + label{
+            border-color: #0053D9;
+            background-color: #EAF3FC;
+            background-img();
+        }
+    </style>
+</head>
+<body>
+    <!--
+    <form action="#">
+        <label for="name">이름
+            <input type="text" id="name" placeholder="이름을 입력하세요.">
+        </label>
+        <label for="pw">비밀번호</label>
+        <input type="password" id="pw" maxlength="8">
+        <label for="email">이메일</label>
+        <input type="email" id="email">
+        <p>취미</p>
+        <input type="checkbox" id="chk1" name="hobby">
+        <label for="chk1">운동</label>
+        <input type="checkbox" id="chk2" name="hobby">
+        <label for="chk2">낮잠</label>
+        <input type="checkbox" id="chk3" name="hobby">
+        <label for="chk3">훈수</label>
+        <p>약관 동의</p>
+        <div>
+            <input type="radio" id="yes" name="agree" checked>
+            <label for="yes">예</label>
+            <input type="radio" id="no" name="agree">
+            <label for="no">아니오</label>
+            <button type="submit">확인</button>
+        </div>
+        <div>
+            <input type="number" value="1">
+            <input type="range" max="10" min="1">
+        </div>
+        <div>
+            <input type="date">
+            <input type="time">
+            <input type="datetime-local">
+            <input type="file">
+        </div>
+        <select>
+            <option value="1">1</option>
+            <option value="2" selected >2</option>
+            <option value="3">3</option>
+        </select>
+        <select name="car">
+            <optgroup label="국산차">
+                <option value="hyundai">현대</option>
+                <option value="kia">기아</option>
+                <option value="genesis">제네시스</option>
+            </optgroup>
+            <optgroup label="수입차">
+                <option value="bmw">BMW</option>
+                <option value="benz">벤츠</option>
+                <option value="audi">아우디</option>
+            </optgroup>
+        </select>
+        <textarea></textarea>
+        <button type="button">button</button>
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+    </form>
+    -->
+
+    <div class="form-template">
+
+        <!-- text -->
+        <div class="form-group-input">
+            <label for="input-txt">text</label>
+            <input type="text" id="input-txt"/>
+        </div>
+
+        <!-- password -->
+        <div class="form-group-input">
+            <label for="input-pw">password</label>
+            <input type="password" id="input-pw"/>
+        </div>
+
+        <!-- checkbox -->
+        <div class="form-group-input checkbox">
+            <input type="checkbox" id="input-ck1" name="checkbox">
+            <label for="input-ck1"></label>
+            <label for="input-ck1" class="label">ck1</label>
+            <input type="checkbox" id="input-ck2" name="checkbox">
+            <label for="input-ck2"></label>
+            <label for="input-ck2" class="label">ck1</label>
+        </div>
+    </div>
+</body>
+</html>
