@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="../5-box-model/common.css">
+    <style>
+        .wrapper{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .header h1{
+            font-size: 84px;
+            background-color: #FDA533;
+            color: #fff;
+            font-weight: 800;
+            text-align: center;
+            padding: 10px;
+        }
+        .header h1 > span{
+            display: block;
+            font-size: 16px;
+        }
+        .header .sub-title{
+            background-color: #CCC;
+            text-align: center;
+            font-size: 14px;
+            padding: 3px 0;
+        }
+
+        .container{
+            display: flex;
+        }
+        .container .left{
+            width: 20%;
+        }
+        .container .left h3{
+            background-color: #980008;
+            font-size: 20px;
+            color: #fff;
+            padding: 3px 0 3px 10px;
+        }
+        .container .left .menu{
+            padding: 12px 0 0 10px;
+        }
+        .container .left .menu li{
+            margin-bottom: 10px;
+        }
+        .container .left .menu a{
+            text-decoration: underline;
+            font-size: 14px;
+        }
+        .container .content{
+            width: 60%;
+            background-color: #DDDDDD;
+            padding: 20px 10px;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        .container .content .card{
+            margin-bottom: 30px;
+        }
+        .container .content .card:last-child{
+            margin-bottom: 0;
+        }
+        .container .content .card .title{
+            background-color: #123553;
+            color: #fff;
+            padding: 4px;
+            margin-bottom: 10px;
+        }
+        .container .content .card .name{
+            color: #123553;
+            padding: 6px 0;
+            margin-bottom: 8px;
+        }
+        .container .content .card .txt{
+            font-size: 14px;
+            color: #123553;
+        }
+        .container .right{
+            width: 20%;
+            padding: 10px;
+        }
+        .container .right .txt{
+            font-size: 24px;
+            line-height: 1.5;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .container .right .txt span{
+            display: block;
+            text-decoration: underline;
+        }
+        .container .right .txt span:first-child{
+            color: #999;
+        }
+        .container .right .txt span:nth-child(2){
+            color: #FDA533;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="title">Musée d'Orsay
+                <span>Musée d'Orsay Musée d'Orsay Musée d'Orsay Musée d'Orsay Musée d'Orsay</span>
+            </h1>
+            <h2 class="sub-title">Royal Academy of Arts, THE REAL VANGOGH THE ARTIST AND HIS LETTERS</h2>
+        </header>
+        <div class="container">
+            <!-- aside.menu -->
+            <div class="left">
+                <h3>Artist</h3>
+                <ul class="menu">
+                    <li><a href="#">작가의 작품</a></li>
+                    <li><a href="#">작가의 시대</a></li>
+                    <li><a href="#">작가의 일생</a></li>
+                </ul>
+            </div>
+            <!-- main-content > .art -->
+            <div class="content">
+                <div class="card">
+                    <p class="title">피리부는 소년</p>
+                    <p class="name">에두아르마네</p>
+                    <p class="txt">1866 캔버스에 유채, 161*97cm, 파리 오르세 Edouard MANET, Le Fifre, H.T, 161*97cm<</p>
+                </div>
+                <div class="card">
+                    <p class="title">피리부는 소년</p>
+                    <p class="name">에두아르마네</p>
+                    <p class="txt">1866 캔버스에 유채, 161*97cm, 파리 오르세 Edouard MANET, Le Fifre, H.T, 161*97cm<</p>
+                </div>
+                <div class="card">
+                    <p class="title">피리부는 소년</p>
+                    <p class="name">에두아르마네</p>
+                    <p class="txt">1866 캔버스에 유채, 161*97cm, 파리 오르세 Edouard MANET, Le Fifre, H.T, 161*97cm<</p>
+                </div>
+                <div class="card">
+                    <p class="title">피리부는 소년</p>
+                    <p class="name">에두아르마네</p>
+                    <p class="txt">1866 캔버스에 유채, 161*97cm, 파리 오르세 Edouard MANET, Le Fifre, H.T, 161*97cm<</p>
+                </div>
+                <div class="card">
+                    <p class="title">피리부는 소년</p>
+                    <p class="name">에두아르마네</p>
+                    <p class="txt">1866 캔버스에 유채, 161*97cm, 파리 오르세 Edouard MANET, Le Fifre, H.T, 161*97cm<</p>
+                </div>
+                <div class="card">
+                    <p class="title">피리부는 소년</p>
+                    <p class="name">에두아르마네</p>
+                    <p class="txt">1866 캔버스에 유채, 161*97cm, 파리 오르세 Edouard MANET, Le Fifre, H.T, 161*97cm<</p>
+                </div>
+            </div>
+            <!-- aside.banner -->
+            <div class="right">
+                <p class="txt">
+                    <span>전세계인들이게</span>
+                    <span>제일 사랑받는</span>
+                    서양미술사의 시대
+                </p>
+                <ul class="link">
+                    <li>
+                        <a href="#">Workshop Go</a>
+                        <p>Life drowing workshop</p>
+                    </li>
+                    <li>
+                        <a href="#">Summer exhibition</a>
+                        <p>A-level Summer Exihibition Online 2010</p>
+                    </li>
+                    <li>
+                        <a href="#">RA collection</a>
+                        <p>RA collection</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer class="footer">
+            &copy;2012 Les Amis du Musée d'Orsay.All rights reserved
+            <a href="mailto:amis@amis-musee-orsay.org" target="_blank">amis@amis-musee-orsay.org</a>
+            Legal status
+        </footer>
+    </div>
+</body>
+</html>
