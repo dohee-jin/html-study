@@ -1,4 +1,116 @@
 @import "common.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 body{
+    font-size: 17px;
+    font-family: "Noto Sans KR", sans-serif;
+    height: 2000px;
+}
+/* header */
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    color: #fff;
+    font-weight: 700;
+}
+header.scroll{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+header .logo{
+    flex: 1;
+}
+header .logo img{
+    height: 60px;
+}
+header .intro{
+    flex: 4;
+}
+header .menu-open{
+    color: #fff;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+header .menu-open .menu-txt{
+    font-size: 20px;
+    margin-right: 10px;
+}
+header .menu-open .bar-icon{
+    font-size: 30px;
+}
+header .gnb{
+    height: 100vh;
+    color: #666;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    font-size: 40px;
+    padding: 70px 100px;
+    background-color: #000;
+    z-index: 10000;
+    display: flex;
+    flex-direction: row-reverse;
+    transition: .5s;
+}
+header .gnb.on{
+    right: 0;
+}
+header .gnb .close{
+    color: #fff;
+}
+header .gnb ul{
+    margin-right: 200px;
+}
+header .gnb ul li{
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+header .gnb ul li:hover{
+    color: #fff;
+}
+
+/* main */
+main{
+    background-color: #000;
+}
+
+/* main */
+/* section visual style */
+section.visual{
+    background-image: url('https://img.famtimes.co.kr/resources/2019/12/03/fdcn9rawiWqtAYGN.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    position: relative;
+}
+section.visual .overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+section.visual .txt{
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 3px 3px 5px #000;
+    z-index: 10;
+}
+section.visual .txt h3 {
+    margin: 30px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.3;
 }
