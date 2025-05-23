@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./styles/common.css">
+    <style>
+        body{
+            padding: 8px;
+        }
+        button{
+            outline: none;
+            border: none;
+            background-color: transparent;
+        }
+        #wrapper{
+            width: 1280px;
+            margin: 0 auto;
+        }
+
+        /* btn-area */
+        header .btn-area{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        header .btn-area .left-btn,
+        header .btn-area .right-btn{
+            display: flex;
+        }
+        header .btn-area .btn{
+            font-size: 0;
+            width: 48px;
+            height: 48px;
+            padding: 8px;
+        }
+        header .btn-area .btn:after,
+        header .btn-area .link:after{
+            content: "";
+            display: block;
+            width: 32px;
+            height: 32px;
+            background-image: url("./img/sp_main.04eb92b7.png");
+            background-size: 463px 442px;
+        }
+        header .btn-area .btn.btn-menu:after{
+            background-position: -311px -166px;
+        }
+        header .btn-area .btn.btn-chat:after{
+            background-position: -99px -316px;
+        }
+        header .btn-area .btn.btn-alert:after{
+            background-position: -311px -232px;
+        }
+        header .btn-area .link{
+            display: block;
+            font-size: 0;
+            width: 48px;
+            height: 48px;
+            padding: 8px;
+        }
+        header .btn-area .link.link-pay:after{
+            background-position: -248px -260px;
+        }
+        header .btn-area .link.link-shop:after{
+            background-position: -34px -316px;
+         }
+
+        /* search-area */
+        .search-area{
+
+        }
+        .search-area .search-group{
+            display: flex;
+            margin: 0 auto;
+            width: fit-content;
+            height: 58px;
+            border: 1px solid #03c75a;
+            border-radius: 29px;
+        }
+        .search-area .search-group .logo{
+            width: 24px;
+        }
+        .search-area .search-group .logo a{
+            width: 24px;
+            height: 24px;
+            background-image: url("./img/sp_main.04eb92b7.png");
+            background-size: 463px 442px;
+            border: 1px solid red;
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="btn-area">
+                <div class="left-btn">
+                    <button class="btn btn-menu">메뉴버튼</button>
+                    <a href="#" class="link link-pay">네이버 페이</a>
+                </div>
+                <div class="right-btn">
+                    <button class="btn btn-chat">채팅 버튼</button>
+                    <button class="btn btn-alert">알림 버튼</button>
+                    <a href="#" class="link link-shop">네이버 쇼핑</a>
+                </div>
+            </div>
+            <div class="search-area">
+                <div class="search-group">
+                    <h1 class="logo">
+                        <a href="#">네이버</a>
+                    </h1>
+                    <div class="input-area">
+                        <input type="text" id="text"/>
+                        <label for="text"></label>
+                        <button class="btn btn-search">검색</button>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul class="gnb">
+                    <li></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+</body>
+</html>
