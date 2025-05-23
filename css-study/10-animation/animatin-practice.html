@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lamp animation</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: #000;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            border: 1px solid #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /* lamp top */
+        .lamp{
+            width: 170px;
+            height: 0;
+            border-bottom: 150px solid #2987e4;
+            border-right: 30px solid transparent;
+            border-left: 30px solid transparent;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 100px;
+        }
+        /* lamp stand */
+        .lamp:before{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 100px;
+            background-color: #fff;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 150px;
+        }
+        /* lamp base */
+        .lamp:after{
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            background-color: #2987e4;
+            top: 230px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            border-radius: 50px 50px 0 0;
+        }
+        /* lamp switch string */
+        input[type="checkbox"]{
+            -webkit-appearance: none;
+            appearance: none;
+            background-color: #fff;
+            width: 5px;
+            height: 25px;
+            position: absolute;
+            top: 147.2px;
+            right: 0;
+            outline: none;
+            cursor: pointer;
+            transition: .5s;
+        }
+        input[type="checkbox"]:after{
+            content: '';
+            width: 15px;
+            height: 15px;
+            background-color: #fff;
+            position: absolute;
+            border-radius: 50%;
+            left: -5px;
+            bottom: -2px;
+        }
+        /* light */
+        input[type="checkbox"]:before{
+            content: '';
+            width: 200px;
+            height: 130px;
+            position: absolute;
+            left: -176px;
+            z-index: -5;
+            clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%);
+            transition: .5s;
+            pointer-events: none;
+        }
+        input[type="checkbox"]:checked{
+            height: 40px;
+        }
+        input[type="checkbox"]:checked:before{
+            background: linear-gradient(rgba(41, 135, 228, 0.5), rgba(41, 135, 228, 0.1));
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lamp">
+            <input type="checkbox">
+        </div>
+    </div>
+</body>
+</html>
