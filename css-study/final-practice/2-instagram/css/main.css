@@ -1,0 +1,195 @@
+@import "common.css";
+body{
+    background-color: #fafafa;
+
+}
+
+/* header */
+header{
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 2px 2px #efefef;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
+}
+header nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .logo{
+    width: 100px;
+    height: 100px;
+}
+header nav .logo img{
+    width: 100%;
+}
+header nav .search-bar input{
+    width: 800px;
+    height: 36px;
+    border: none;
+    background-color: #efefef;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+header nav .nav-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* main */
+main{
+    padding-top: 120px;
+}
+.content-container{
+    width: 800px;
+    margin: 0 auto 50px;
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.content-container .left-column{
+    width: 500px;
+    max-height: 675px;
+    overflow-y: auto;
+}
+.content-container .left-column .post{
+    background-color: #fff;
+    border: 1px solid #efefef;
+    border-radius: 3px;
+    font-size: 0;
+    margin-bottom: 30px;
+}
+.content-container .left-column .post .post-header{
+    padding: 10px;
+}
+.content-container .left-column .post .post-header img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.content-container .left-column .post .post-header .post-username{
+    font-weight: 500;
+    font-size: 15px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.content-container .left-column .post .post-image{
+    width: 100%;
+    height: 100%;
+}
+.content-container .left-column .post .post-actions{
+    padding: 10px;
+    display: flex;
+    gap: 12px;
+}
+.content-container .left-column .post .post-caption{
+    padding: 0 0 20px 10px;
+    font-size: 15px;
+}
+.content-container .left-column .post .post-caption strong{
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.content-container .right-column{
+    width: 280px;
+    position: ;
+}
+.content-container .right-column .profile-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.content-container .right-column .profile-info .profile-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.content-container .right-column .profile-info div{
+    font-size: 15px;
+    padding-left: 6px;
+}
+.content-container .right-column .profile-info strong{
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+.content-container .right-column .suggestions{
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #efefef;
+    padding: 40px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.content-container .right-column .suggestions h4{
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.content-container .right-column .suggestions .suggestion{
+    display: flex;
+    align-items: center;
+}
+.content-container .right-column .suggestions .suggestion img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.content-container .right-column .suggestions .suggestion div{
+    font-size: 14px;
+    padding-left: 6px;
+}
+.content-container .right-column .suggestions .suggestion strong{
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+.content-container .right-column .suggestions .suggestion button{
+    padding: 5px 10px;
+    background-color: #0496F6;
+    border: 1px solid #048DE8;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    box-shadow: 0 -2px 2px #efefef;
+    background-color: #fff;
+    padding: 30px 0 50px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+footer ul li{
+    font-size: 13px;
+    font-weight: 500;
+    color: #2E4B67;
+}
+
