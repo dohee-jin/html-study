@@ -1,0 +1,123 @@
+@import "common.css";
+
+/* reset */
+button,
+input{
+    background: none;
+    outline: none;
+    border: 0;
+}
+.btn{
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    color: #3c4043;
+    border-radius: 6px;
+    cursor: pointer;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* header */
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+header nav ul li a{
+    font-size: 14px;
+    color: #111;
+}
+header nav ul li .btn-app{
+    width: 30px;
+    height: 30px;
+}
+header nav ul li .btn.btn-login{
+    background-color: #0b57d0;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    display: block;
+}
+header nav ul li .btn.btn-login:hover{
+    border: 0;
+    box-shadow: 0 1px 3px #666;
+}
+
+main{
+    margin-top: -50px;
+    text-align: center;
+}
+
+/* search-bar */
+h1.logo{
+    width: 272px;
+    height: 92px;
+    margin: 0 auto 50px;
+}
+h1.logo img{
+    width: 100%;
+}
+
+/* search-bar */
+.search-bar{
+    /*width: fit-content;*/
+    margin: 0 auto 30px;
+    position: relative;
+}
+.search-bar input{
+    width: 746px;
+    height: 48px;
+    border-radius: 24px;
+    border: 1px solid #eee;
+    box-shadow: 1px 3px 10px #eee;
+    padding-left: 50px;
+    font-size: 14px;
+}
+/*.search-bar::before{*/
+/*    content: '\f002';*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    left: 15px;*/
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+/*}*/
+
+/* buttons */
+.buttons .btn{
+    height: 40px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.buttons .btn:last-child{
+    margin: 0;
+}
+
+/* footer */
+footer{
+    color: #111;
+    background-color: #f2f2f2;
+}
+footer .location{
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+}
+footer .info-area{
+    display: flex;
+    font-size: 14px;
+}
+footer .info-area > div{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+}
