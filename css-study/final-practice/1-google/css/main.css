@@ -13,6 +13,11 @@ input{
     color: #3c4043;
     border-radius: 6px;
     cursor: pointer;
+    border: 1px solid #f8f9fa;
+}
+.btn:hover{
+    border-color: #eee;
+    box-shadow: 1px 3px 10px #eee;
 }
 body{
     height: 100vh;
